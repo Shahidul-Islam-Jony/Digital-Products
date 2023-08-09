@@ -12,22 +12,50 @@
     <!-- tailwind custom property -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
 </head>
 
 <body>
     <!-- header section start here -->
     <header>
+        <!-- navbar start here -->
+        <nav class="flex flex-col justify-center h-40 lg:flex-row lg:justify-around items-center lg:h-20 bg-[#424141]">
+            <div>
+                <img class="w-32" src="logo/logo-light.png" alt="">
+            </div>
+            <div>
+                <ul class="menu menu-horizontal px-1 font-bold text-white">
+                    <li><a href="">Home-1</a></li>
+                    <li><a href="">Home-2</a></li>
+                    <li><a href="">Home-3</a></li>
+                    <li><a href="">Home-4</a></li>
 
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar ends here -->
+        <!-- banner section start here -->
+        <div class="hero min-h-screen" style="background-image: url(images/background.png),linear-gradient(45deg, rgb(5,5,5),#2e2e2e);">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <img src="images/banner.png" class="max-w-sm rounded-lg shadow-2xl" />
+                <div class="text-white">
+                    <h1 class="text-5xl font-bold">Box Office News!</h1>
+                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+        <!-- banner section ends here -->
     </header>
     <!-- header section ends here -->
     <!-- main section start here -->
@@ -37,7 +65,7 @@
     <!-- main section ends here -->
     <!-- footer section start here -->
     <footer>
-        
+
     </footer>
     <!-- footer section ends here -->
 </body>
